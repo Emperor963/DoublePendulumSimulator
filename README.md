@@ -9,3 +9,7 @@ One might also notice that there is an IntegralCalculator parent class with subc
 There also exists a QuadraticSolver class that is used to find the eigenfrequencies from the secular equation, but there is no way of handling cases where the eigenfrequency is imaginary (meaning the theta value is exponential, usually a case for larger initial deflections). This is technically not an issue for this specific use case, but I do intend on making this a more general simulator capable of handling chaotic simulations, and therefore fixing would be required in this class to handle complex cases.
 
 Presently I am also working on making a visual demonstration of this system using the PApplet class in order to bring out the simulation beyond data and graphs, into real time visualization of the system's changes.
+
+![Theta-Plot](https://github.com/Emperor963/DoublePendulumSimulator/assets/83712724/0af8a8e0-cc89-4aa0-9b62-ef4e2967159c)
+
+This is a GNUPlot of the theta values for the current values in DriverMain
