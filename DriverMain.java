@@ -1,6 +1,16 @@
+/**
+ * Runs a particular example of the Double Pendulum Simulator
+ * The parameters here are completely adjustable according to necessary requirements
+ * @author Sarannya Bhattacharya
+ */
 import java.io.*;
 public class DriverMain {
 	
+	/**
+	 * Writes the values of Theta1 and Theta2 into .txt files in /data
+	 * @param Theta1 values of theta1 in an array
+	 * @param Theta2 values of theta2 in an array
+	 */
 	public static void writer(float[] Theta1, float[] Theta2) {
 		try {
 			File theta1 = new File("data" + File.separator + "Theta1.dat");
