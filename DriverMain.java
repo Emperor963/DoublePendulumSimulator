@@ -13,14 +13,14 @@ public class DriverMain {
 	 */
 	public static void writer(float[] Theta1, float[] Theta2) {
 		try {
-			File theta1 = new File("data" + File.separator + "Theta1.dat");
-			File theta2 = new File("data" + File.separator + "Theta2.dat");
+			File theta1 = new File("data" + File.separator + "Theta1.txt");
+			File theta2 = new File("data" + File.separator + "Theta2.txt");
 			
 			FileWriter writer1 = new FileWriter(theta1);
 			FileWriter writer2 = new FileWriter(theta2);
 			
 			for(int i = 0; i < Theta1.length; i++) {
-				if(i % 5 == 0) {
+				if(i % 1 == 0) {
 					writer1.write(i + " " + Theta1[i] + "\n");
 					writer2.write(i + " " + Theta2[i] + "\n");
 				}
@@ -69,22 +69,17 @@ public class DriverMain {
 			n1[i] = (float) Math.cos(pendulumSystem.w[0] * time[i]);
 			n2[i] = (float) Math.cos(pendulumSystem.w[1] * time[i]);
 		}
-		System.out.println("Mass tensor: ");
 		System.out.println(pendulumSystem.massTensor[0] + " " + pendulumSystem.massTensor[1]);
 		System.out.println(pendulumSystem.massTensor[2] + " " + pendulumSystem.massTensor[3]);
 		System.out.println();
-		System.out.println("Response tensor: ");
 		System.out.println(pendulumSystem.responseTensor[0] + " " + pendulumSystem.responseTensor[1]);
 		System.out.println(pendulumSystem.responseTensor[2] + " " + pendulumSystem.responseTensor[3]);
 		System.out.println();
-		System.out.println("Eigenfrequencies: ");
 		System.out.println(pendulumSystem.w[0] + "   " + pendulumSystem.w[1]);
 		System.out.println();
-		System.out.println("Eigenmodes, each row corresponding to w1 and w2 respectively: ");
 		System.out.println(Bw1[0] + "  " + Bw1[1]);
 		System.out.println(Bw2[0] + "  " + Bw2[1]);
 		System.out.println();
-		System.out.println("Normal modes: ");
 		for(int i = 0; i < n1.length; i++) {
 			System.out.println(n1[i] + " " + n2[i] +  "        " + time[i]);
 		}
