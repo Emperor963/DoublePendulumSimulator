@@ -69,17 +69,22 @@ public class DriverMain {
 			n1[i] = (float) Math.cos(pendulumSystem.w[0] * time[i]);
 			n2[i] = (float) Math.cos(pendulumSystem.w[1] * time[i]);
 		}
+		System.out.println("Mass Tensor: ");
 		System.out.println(pendulumSystem.massTensor[0] + " " + pendulumSystem.massTensor[1]);
 		System.out.println(pendulumSystem.massTensor[2] + " " + pendulumSystem.massTensor[3]);
 		System.out.println();
+		System.out.println("Response Tensor: ");
 		System.out.println(pendulumSystem.responseTensor[0] + " " + pendulumSystem.responseTensor[1]);
 		System.out.println(pendulumSystem.responseTensor[2] + " " + pendulumSystem.responseTensor[3]);
 		System.out.println();
+		System.out.println("Eigenfrequencies: ");
 		System.out.println(pendulumSystem.w[0] + "   " + pendulumSystem.w[1]);
 		System.out.println();
+		System.out.println("Eigenmodes, each line corresponding to w1 and w2 respectively");
 		System.out.println(Bw1[0] + "  " + Bw1[1]);
 		System.out.println(Bw2[0] + "  " + Bw2[1]);
 		System.out.println();
+		System.out.println("Normal modes:");
 		for(int i = 0; i < n1.length; i++) {
 			System.out.println(n1[i] + " " + n2[i] +  "        " + time[i]);
 		}
