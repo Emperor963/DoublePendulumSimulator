@@ -130,11 +130,11 @@ public class DoublePendulumDriver {
 		IntegralCalculator calculator = new IntegralCalculator(fn);
 
 		for(int i = 2; i < t.length; i++) {
-			//System.out.println("x");
+			
 			normalMode[i] = calculator.HarmonicFDM2(ndot0, n0, t[i], t[i-1], 100, w);
 			n0 = normalMode[i-1];
 			ndot0 = (normalMode[i-1] - normalMode[i-2]) / (t[i-1] - t[i-2]);
-			//System.out.println("x");
+			
 		}
 		
 		return normalMode;
