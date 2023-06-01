@@ -18,5 +18,5 @@ Here is a graphic representation using pygame captured with a phone camera. Cred
 
 https://github.com/Emperor963/DoublePendulumSimulator/assets/83712724/0caafe0b-83c4-4d2d-a076-a3601d8eaf45
 
-The above GUI refers to a particular mass ratio of 15:1 between the two pendula with equal lengths. The angles of the pendula have been exaggerated slightly in order for the simulation to look visual. However, in practice, very large angles would break down the small angle approximations made in this simulator and the behavior would mimic real life with certain errors.
+The above GUI refers to a particular mass ratio of 15:1 between the two pendula with equal lengths. The angles of the pendula have been exaggerated slightly in order for the simulation to look visual. However, in practice, very large angles would break down the small angle approximations made in this simulator and the behavior would mimic real life with certain errors. Please note that this GUI is NOT a representation of scientific data and has been made for the purposes of visualization only. Measuring data from the GUI will not be reflective of physical laws since certain values have been exaggerated for the purposes of demonstration.
 
