@@ -13,3 +13,8 @@ Presently I am also working on making a visual demonstration of this system usin
 ![Theta-Plot](https://github.com/Emperor963/DoublePendulumSimulator/assets/83712724/0af8a8e0-cc89-4aa0-9b62-ef4e2967159c)
 
 This is a GNUPlot of the theta values for the current values in DriverMain
+
+Here is a graphic representation using pygame captured with a phone camera. Credits for the GUI using the Theta files goes to Soummadeep Sengupta (@Bumblemoo)
+
+https://github.com/Emperor963/DoublePendulumSimulator/assets/83712724/0caafe0b-83c4-4d2d-a076-a3601d8eaf45
+
